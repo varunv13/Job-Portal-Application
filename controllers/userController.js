@@ -2,6 +2,7 @@ import userModel from "../models/userModel.js";
 import validator from "validator";
 import bcrypt from "bcrypt";
 import generateToken from "../utils/generateToken.js";
+import { name } from "ejs";
 
 export const registerUser = async (req, res, next) => {
   try {
@@ -81,7 +82,12 @@ export const loginUser = async (req, res, next) => {
         return res.send({
           message: "User Loggeed In succesfully",
           success: true,
-          user,
+          user: {
+            name: user.name,
+            email: user.email,
+            location: user.location,
+            contact: user.contact,
+          },
           token,
         });
       } else {
