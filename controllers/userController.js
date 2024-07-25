@@ -2,11 +2,7 @@ import userModel from "../models/userModel.js";
 import validator from "validator";
 import bcrypt, { compare } from "bcrypt";
 import generateToken from "../utils/generateToken.js";
-<<<<<<< HEAD
-import { name } from "ejs";
-=======
 import { comparePassword, hashPassword } from "../utils/passwordSetting.js";
->>>>>>> temp
 
 export const registerUser = async (req, res, next) => {
   try {
@@ -71,29 +67,6 @@ export const loginUser = async (req, res, next) => {
   if (!user) {
     next("User doesn't exist");
   } else {
-<<<<<<< HEAD
-    // console.log(user.password);
-    bcrypt.compare(password, user.password, (err, result) => {
-      console.log(result);
-      if (result) {
-        let token = generateToken(user);
-        res.cookie("token", token);
-        return res.send({
-          message: "User Loggeed In succesfully",
-          success: true,
-          user: {
-            name: user.name,
-            email: user.email,
-            location: user.location,
-            contact: user.contact,
-          },
-          token,
-        });
-      } else {
-        next("User or Password is incorrect");
-      }
-    });
-=======
     const result = await comparePassword(password, user.password);
     // console.log(result);
     if (result) {
@@ -109,7 +82,6 @@ export const loginUser = async (req, res, next) => {
     } else {
       next("User or Password is incorrect");
     }
->>>>>>> temp
   }
 };
 
