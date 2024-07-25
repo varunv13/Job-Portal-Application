@@ -9,7 +9,7 @@ const isLoggedIn = async (req, res, next) => {
   }
   try {
     let decoded = jwt.verify(token, secretKey);
-    // console.log(decoded.id);
+    // console.log(decoded);
     let user = await userModel.findOne({
       email: decoded.email
       // id: decoded.id
@@ -20,7 +20,7 @@ const isLoggedIn = async (req, res, next) => {
     req.user = user;
     next();
   } catch (error) {
-    next(error.message);
+    return next(error.message);
   }
 };
 
