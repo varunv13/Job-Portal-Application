@@ -1,13 +1,14 @@
 import express from "express";
 import isLoggedIn from "../middlewares/isLoggedInMiddleware.js";
 
-const router = express.Router();
 import {
   registerUser,
   loginUser,
   logoutUser,
   updateUser,
 } from "../controllers/userController.js";
+
+const router = express.Router();
 
 router.post("/register", registerUser);
 router.post("/login", loginUser);

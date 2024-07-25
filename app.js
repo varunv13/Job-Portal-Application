@@ -10,6 +10,7 @@ import { fileURLToPath } from "url";
 
 import index from "./routes/index.js";
 import userRouters from "./routes/userRouters.js";
+import jobRouters from "./routes/jobRouters.js";
 import errorMiddleware from "./middlewares/errorMiddleware.js";
 
 const __fileName = fileURLToPath(import.meta.url);
@@ -28,6 +29,7 @@ app.set("view engine", "ejs");
 // ROUTERS
 app.use("/api/v1/", index);
 app.use("/api/v1/users", userRouters);
+app.use("/api/v1/jobs", jobRouters);
 
 // validation middleware
 app.use(errorMiddleware);
