@@ -35,7 +35,7 @@ const jobSchema = mongoose.Schema(
     },
   },
   {
-    timestampa: true,
+    timestamps: true,
   }
 );
 
