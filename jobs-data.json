@@ -1,0 +1,407 @@
+[
+  {
+      "createdAt": { "$date": "2024-07-01T08:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "New York",
+      "workType": "full-time",
+      "status": "pending",
+      "position": "Software Engineer",
+      "company": "TechCorp"
+  },
+  {
+      "createdAt": { "$date": "2024-07-02T09:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Francisco",
+      "workType": "part-time",
+      "status": "active",
+      "position": "Data Scientist",
+      "company": "InnovateX"
+  },
+  {
+      "createdAt": { "$date": "2024-07-03T10:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Austin",
+      "workType": "contract",
+      "status": "interview",
+      "position": "Product Manager",
+      "company": "Visionary Inc."
+  },
+  {
+      "createdAt": { "$date": "2024-07-04T11:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Seattle",
+      "workType": "full-time",
+      "status": "closed",
+      "position": "UX Designer",
+      "company": "DesignPro"
+  },
+  {
+      "createdAt": { "$date": "2024-07-05T12:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Chicago",
+      "workType": "part-time",
+      "status": "pending",
+      "position": "Marketing Specialist",
+      "company": "MarketLeaders"
+  },
+  {
+      "createdAt": { "$date": "2024-07-06T13:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Boston",
+      "workType": "contract",
+      "status": "active",
+      "position": "Business Analyst",
+      "company": "AnalyticCorp"
+  },
+  {
+      "createdAt": { "$date": "2024-07-07T14:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Denver",
+      "workType": "full-time",
+      "status": "interview",
+      "position": "System Administrator",
+      "company": "AdminTech"
+  },
+  {
+      "createdAt": { "$date": "2024-07-08T14:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Los Angeles",
+      "workType": "part-time",
+      "status": "closed",
+      "position": "Network Engineer",
+      "company": "NetWorld"
+  },
+  {
+      "createdAt": { "$date": "2024-07-09T15:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Diego",
+      "workType": "contract",
+      "status": "pending",
+      "position": "Data Analyst",
+      "company": "DataVision"
+  },
+  {
+      "createdAt": { "$date": "2024-07-10T16:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Houston",
+      "workType": "full-time",
+      "status": "active",
+      "position": "Software Developer",
+      "company": "DevWorks"
+  },
+  {
+      "createdAt": { "$date": "2024-07-11T17:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Philadelphia",
+      "workType": "part-time",
+      "status": "interview",
+      "position": "Web Developer",
+      "company": "Webify"
+  },
+  {
+      "createdAt": { "$date": "2024-07-12T17:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Phoenix",
+      "workType": "contract",
+      "status": "closed",
+      "position": "HR Manager",
+      "company": "PeopleFirst"
+  },
+  {
+      "createdAt": { "$date": "2024-07-13T18:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Dallas",
+      "workType": "full-time",
+      "status": "pending",
+      "position": "Sales Manager",
+      "company": "SalesForce"
+  },
+  {
+      "createdAt": { "$date": "2024-07-14T19:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Jose",
+      "workType": "part-time",
+      "status": "active",
+      "position": "Financial Analyst",
+      "company": "FinancePro"
+  },
+  {
+      "createdAt": { "$date": "2024-07-15T20:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Jacksonville",
+      "workType": "contract",
+      "status": "interview",
+      "position": "Content Writer",
+      "company": "ContentCo"
+  },
+  {
+      "createdAt": { "$date": "2024-07-16T20:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Seattle",
+      "workType": "full-time",
+      "status": "closed",
+      "position": "Graphic Designer",
+      "company": "DesignWorks"
+  },
+  {
+      "createdAt": { "$date": "2024-07-17T21:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Francisco",
+      "workType": "part-time",
+      "status": "pending",
+      "position": "Legal Advisor",
+      "company": "LegalTech"
+  },
+  {
+      "createdAt": { "$date": "2024-07-18T22:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Seattle",
+      "workType": "contract",
+      "status": "active",
+      "position": "Operations Manager",
+      "company": "OpsMaster"
+  },
+  {
+      "createdAt": { "$date": "2024-07-19T23:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Los Angeles",
+      "workType": "full-time",
+      "status": "interview",
+      "position": "Executive Assistant",
+      "company": "ExecutiveEdge"
+  },
+  {
+      "createdAt": { "$date": "2024-07-20T23:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Diego",
+      "workType": "part-time",
+      "status": "closed",
+      "position": "Research Scientist",
+      "company": "ResearchLab"
+  },
+  {
+      "createdAt": { "$date": "2024-07-21T00:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Chicago",
+      "workType": "contract",
+      "status": "pending",
+      "position": "Project Coordinator",
+      "company": "ProjManage"
+  },
+  {
+      "createdAt": { "$date": "2024-07-22T01:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "New York",
+      "workType": "full-time",
+      "status": "active",
+      "position": "Customer Support",
+      "company": "SupportCo"
+  },
+  {
+      "createdAt": { "$date": "2024-07-23T02:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Francisco",
+      "workType": "part-time",
+      "status": "interview",
+      "position": "Quality Assurance",
+      "company": "QualityInc."
+  },
+  {
+      "createdAt": { "$date": "2024-07-24T02:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Austin",
+      "workType": "contract",
+      "status": "closed",
+      "position": "Database Administrator",
+      "company": "DataSys"
+  },
+  {
+      "createdAt": { "$date": "2024-07-25T03:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Houston",
+      "workType": "full-time",
+      "status": "pending",
+      "position": "Marketing Director",
+      "company": "MarketVision"
+  },
+  {
+      "createdAt": { "$date": "2024-07-26T04:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Philadelphia",
+      "workType": "part-time",
+      "status": "active",
+      "position": "Business Development",
+      "company": "BizGrow"
+  },
+  {
+      "createdAt": { "$date": "2024-07-27T05:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Phoenix",
+      "workType": "contract",
+      "status": "interview",
+      "position": "IT Specialist",
+      "company": "ITSecure"
+  },
+  {
+      "createdAt": { "$date": "2024-07-28T05:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Dallas",
+      "workType": "full-time",
+      "status": "closed",
+      "position": "Product Designer",
+      "company": "DesignStudio"
+  },
+  {
+      "createdAt": { "$date": "2024-07-29T06:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Jose",
+      "workType": "part-time",
+      "status": "pending",
+      "position": "Operations Analyst",
+      "company": "OpsInsight"
+  },
+  {
+      "createdAt": { "$date": "2024-07-30T07:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Jacksonville",
+      "workType": "contract",
+      "status": "active",
+      "position": "Technical Support",
+      "company": "TechHelp"
+  },
+  {
+      "createdAt": { "$date": "2024-07-31T08:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Diego",
+      "workType": "full-time",
+      "status": "interview",
+      "position": "Security Analyst",
+      "company": "SecureNet"
+  },
+  {
+      "createdAt": { "$date": "2024-08-01T08:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Chicago",
+      "workType": "part-time",
+      "status": "closed",
+      "position": "Software Tester",
+      "company": "TestLab"
+  },
+  {
+      "createdAt": { "$date": "2024-08-02T09:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "New York",
+      "workType": "contract",
+      "status": "pending",
+      "position": "Content Strategist",
+      "company": "ContentCraft"
+  },
+  {
+      "createdAt": { "$date": "2024-08-03T10:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Francisco",
+      "workType": "full-time",
+      "status": "active",
+      "position": "Customer Success Manager",
+      "company": "SuccessCorp"
+  },
+  {
+      "createdAt": { "$date": "2024-08-04T11:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Austin",
+      "workType": "part-time",
+      "status": "interview",
+      "position": "E-commerce Specialist",
+      "company": "EcomSolutions"
+  },
+  {
+      "createdAt": { "$date": "2024-08-05T11:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Houston",
+      "workType": "contract",
+      "status": "closed",
+      "position": "Cloud Engineer",
+      "company": "CloudTech"
+  },
+  {
+      "createdAt": { "$date": "2024-08-06T12:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Philadelphia",
+      "workType": "full-time",
+      "status": "pending",
+      "position": "IT Consultant",
+      "company": "ConsultCo"
+  },
+  {
+      "createdAt": { "$date": "2024-08-07T13:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Phoenix",
+      "workType": "part-time",
+      "status": "active",
+      "position": "Financial Planner",
+      "company": "FinancePlan"
+  },
+  {
+      "createdAt": { "$date": "2024-08-08T14:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Dallas",
+      "workType": "contract",
+      "status": "interview",
+      "position": "Sales Representative",
+      "company": "SalesPro"
+  },
+  {
+      "createdAt": { "$date": "2024-08-09T14:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Jose",
+      "workType": "full-time",
+      "status": "closed",
+      "position": "Business Manager",
+      "company": "BizManager"
+  },
+  {
+      "createdAt": { "$date": "2024-08-10T15:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Jacksonville",
+      "workType": "part-time",
+      "status": "pending",
+      "position": "Digital Marketer",
+      "company": "DigitalMark"
+  },
+  {
+      "createdAt": { "$date": "2024-08-11T16:15:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Diego",
+      "workType": "contract",
+      "status": "active",
+      "position": "Systems Analyst",
+      "company": "SysAnalytix"
+  },
+  {
+      "createdAt": { "$date": "2024-08-12T17:00:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "Chicago",
+      "workType": "full-time",
+      "status": "interview",
+      "position": "Data Engineer",
+      "company": "DataWorks"
+  },
+  {
+      "createdAt": { "$date": "2024-08-13T17:45:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "New York",
+      "workType": "part-time",
+      "status": "closed",
+      "position": "Marketing Analyst",
+      "company": "MarketAnalytics"
+  },
+  {
+      "createdAt": { "$date": "2024-08-14T18:30:00.000Z" },
+      "postedBy": { "$oid": "66a2a2df7896874d0ecada33" },
+      "workLocation": "San Francisco",
+      "workType": "contract",
+      "status": "pending",
+      "position": "SEO Specialist",
+      "company": "SEOMasters"
+  }
+]

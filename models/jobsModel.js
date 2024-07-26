@@ -12,7 +12,7 @@ const jobSchema = mongoose.Schema(
     },
     status: {
       type: "String",
-      enum: ["pending", "reject", "interview"],
+      enum: ["pending", "reject", "interview", "active", "closed"],
       default: "pending",
     },
     workType: {
@@ -29,9 +29,13 @@ const jobSchema = mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
   },
   {
-    timestampa: true,
+    timestamps: true,
   }
 );
 
