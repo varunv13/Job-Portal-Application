@@ -1,4 +1,5 @@
 import jobModel from "../models/jobsModel.js";
+import mongoose from "mongoose";
 
 export const createJob = async (req, res, next) => {
   try {
@@ -77,4 +78,132 @@ export const deleteJob = async (req, res, next) => {
   return res.send({
     message: "Job deleted successfully",
   });
+};
+
+export const jobStats = async (req, res, next) => {
+  if (!req.user) return next("You're unauthorised to perform this operation");
+
+  const stats = await jobModel.aggregate([
+    {
+      // search by user-job
+      $match: {
+        postedBy: new mongoose.Types.ObjectId(req.user.id),
+      },
+    },
+    {
+      $group: {
+        _id: "$status",
+        count: { $sum: 1 },
+      },
+    },
+  ]);
+  if (stats.length === 0) return res.send({ message: "No stats to show" });
+
+  const monthlyApplications = await jobModel.aggregate([
+    { $match: { postedBy: new mongoose.Types.ObjectId(req.user.id) } },
+    {
+      $group: {
+        _id: { month: { $month: "$createdAt" }, year: { $year: "$createdAt" } },
+        count: { $sum: 1 },
+      },
+    },
+  ]);
+
+  const locationBased = await jobModel.aggregate([
+    { $match: { postedBy: new mongoose.Types.ObjectId(req.user.id) } },
+    {
+      $group: {
+        _id: { location: { $substr: ["$workLocation", 0, 20] } },
+        count: { $sum: 1 },
+      },
+    },
+  ]);
+
+  const activeJobs = await jobModel.aggregate([
+    {
+      $match: {
+        postedBy: new mongoose.Types.ObjectId(req.user.id),
+        status: "active",
+      },
+    },
+    {
+      $group: {
+        _id: {
+          location: { $substr: ["$workLocation", 0, 20] },
+        },
+        count: { $sum: 1 },
+      },
+    },
+  ]);
+
+  const pendingJobs = await jobModel.aggregate([
+    {
+      $match: {
+        postedBy: new mongoose.Types.ObjectId(req.user.id),
+        status: "pending",
+      },
+    },
+    {
+      $group: {
+        _id: {
+          location: { $substr: ["$workLocation", 0, 20] },
+        },
+        count: { $sum: 1 },
+      },
+    },
+  ]);
+
+  const interviewScehduled = await jobModel.aggregate([
+    {
+      $match: {
+        postedBy: new mongoose.Types.ObjectId(req.user.id),
+        status: "interview",
+      },
+    },
+    {
+      $group: {
+        _id: {
+          location: { $substr: ["$workLocation", 0, 20] },
+        },
+        count: { $sum: 1 },
+      },
+    },
+  ]);
+
+  const closedJobs = await jobModel.aggregate([
+    {
+      $match: {
+        postedBy: new mongoose.Types.ObjectId(req.user.id),
+        status: "closed",
+      },
+    },
+    {
+      $group: {
+        _id: {
+          location: { $substr: ["$workLocation", 0, 20] },
+        },
+        count: { $sum: 1 },
+      },
+    },
+  ]);
+
+  const rejected = await jobModel.aggregate([
+    {
+      $match: {
+        postedBy: new mongoose.Types.ObjectId(req.user.id),
+        status: "reject",
+      },
+    },
+    {
+      $group: {
+        _id: {
+          location: { $substr: ["$workLocation", 0, 20] },
+        },
+        count: { $sum: 1 },
+      },
+    },
+  ]);
+  // console.log(activeJobs);
+
+  return res.send({ pendingJobs });
 };
